@@ -8,10 +8,12 @@
   roles:
 
     - role: ansible-role-jenkins-server
+      jenkins_repo_packages: [ "java-1.8.0-openjdk","jenkins","initscripts","unzip","git" ]
       jenkins_groups: [ "jenkins","docker" ]
       jenkins_plugins:
         - configuration-as-code
         - credentials
+        - docker-plugin
       jenkins_config_wizard_enable: "false"
       jenkins_config_admin_name: administrator
       jenkins_config_admin_pass: 4dm1nUs3r
