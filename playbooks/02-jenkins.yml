@@ -9,6 +9,9 @@
 
     - role: ansible-role-jenkins-server
       jenkins_groups: [ "jenkins","docker" ]
-      jenkins_plugins: [ "configuration-as-code","terraform" ]
+      jenkins_plugins:
+        - configuration-as-code
+        - credentials
+      jenkins_config_wizard_enable: "false"
       jenkins_config_admin_name: administrator
       jenkins_config_admin_pass: 4dm1nUs3r
