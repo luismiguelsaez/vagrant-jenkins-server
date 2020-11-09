@@ -1,0 +1,4 @@
+---
+
+- import_playbook: 01-docker-ce.yml
+- import_playbook: 02-jenkins.yml

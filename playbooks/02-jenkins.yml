@@ -1,0 +1,14 @@
+---
+
+- name: Jenkins server setup
+  gather_facts: True
+  hosts: all
+  become: True
+
+  roles:
+
+    - role: ansible-role-jenkins-server
+      jenkins_groups: [ "jenkins","docker" ]
+      jenkins_plugins: [ "configuration-as-code","terraform" ]
+      jenkins_config_admin_name: administrator
+      jenkins_config_admin_pass: 4dm1nUs3r
