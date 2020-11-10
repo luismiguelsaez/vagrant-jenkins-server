@@ -11,12 +11,8 @@
       docker_ce_enable: True
       docker_ce_so_packages:
         - lvm2
-      docker_pip_enable: False
-      docker_pip_enable_install_script: False
-      docker_pip_so_packages:
-        - python-devel
-        - "@Development tools"
-      docker_pip_python_packages: []
+      docker_lvm_storage_enable: True
+      docker_lvm_storage_pv_devices: /dev/sdb
       docker_daemon_config:
         bip: "192.168.200.1/24"
         exec-opts:

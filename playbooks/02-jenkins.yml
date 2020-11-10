@@ -13,7 +13,8 @@
       jenkins_plugins:
         - configuration-as-code
         - credentials
-        - docker-plugin
+        #- workflow-aggregator
+        #- workflow-basic-steps
       jenkins_config_wizard_enable: "false"
       jenkins_config_admin_name: administrator
       jenkins_config_admin_pass: 4dm1nUs3r
