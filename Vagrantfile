@@ -12,6 +12,7 @@ Vagrant.configure("2") do |config|
   config.vm.provider "virtualbox" do |vb|
     vb.gui = false
     vb.memory = "2048"
+    # Create docker lib additional disk
     vb.customize ['createhd', '--filename', extra_disk_file, '--size', 2 * 1024]
     vb.customize ['storageattach', :id, '--storagectl', 'IDE', '--port', 1, '--device', 0, '--type', 'hdd', '--medium', extra_disk_file]
   end
