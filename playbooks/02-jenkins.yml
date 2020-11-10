@@ -8,7 +8,7 @@
   roles:
 
     - role: ansible-role-jenkins-server
-      jenkins_repo_packages: [ "java-1.8.0-openjdk","jenkins","initscripts","unzip","git" ]
+      jenkins_repo_packages: [ "java-1.8.0-openjdk","jenkins","initscripts","unzip","git","python-virtualenv" ]
       jenkins_groups: [ "jenkins","docker" ]
       jenkins_plugins:
         - configuration-as-code
