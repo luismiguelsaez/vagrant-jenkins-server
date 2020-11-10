@@ -13,6 +13,7 @@
       jenkins_plugins:
         - configuration-as-code
         - credentials
+        - ansicolor
         #- workflow-aggregator
         #- workflow-basic-steps
         #- docker-workflow
