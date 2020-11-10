@@ -15,9 +15,11 @@
         - credentials
         #- workflow-aggregator
         #- workflow-basic-steps
+        #- docker-workflow
         #- git
         #- timestamper
         #- ec2
+        #- aws-credentials
       jenkins_config_wizard_enable: "false"
       jenkins_config_admin_name: administrator
       jenkins_config_admin_pass: 4dm1nUs3r
