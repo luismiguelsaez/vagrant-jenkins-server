@@ -5,6 +5,7 @@ extra_disk_file = '/tmp/extra_disk.vdi'
 
 Vagrant.configure("2") do |config|
 
+  config.vm.provider "virtualbox"
   config.vm.box = "centos/7"
   config.vm.box_check_update = false
   config.vm.network "forwarded_port", guest: 8080, host: 8080
